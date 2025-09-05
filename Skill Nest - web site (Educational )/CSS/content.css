@@ -1,0 +1,288 @@
+*{
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body{
+    font-family: Arial,  sans-serif;
+    padding: 20px;
+    margin: 30px;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+
+}
+
+/*nav bar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f3c63;
+    padding: 10px 30px;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+  height: 35px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color:#87ceeb;
+}
+
+
+/*image*/
+.image{
+    float: right;
+    max-width: 600px;
+    margin: 50px 20px;
+
+}
+
+.image img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gride-title{
+    color: blue;
+    font-size: 32px;
+    font-weight: bold;
+}
+/*title*/
+.sub-title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/*Heading*/
+h1,h2,h3{
+    color: #2c3e50;
+}
+
+
+/*Lists*/
+ul{
+    padding-left: 20px;
+
+}
+
+/*Each module spacing*/
+.module{
+    margin-bottom: 25px;
+
+}
+
+.maintopic{
+    color: #007bff;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.sub-title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.module-container{
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.module{
+    display: inline-block;
+    flex:1 1 200px;
+    text-align: center;
+    padding: 20px 30px;
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    color: #007bff;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s,color 0.3s;
+    background: white;   
+}
+
+.module:hover{
+    background-color: #007bff;
+    color: white;
+}
+
+/*Downloads.links*/
+.download{
+    display:inline-block;
+    border: 2px solid;
+    margin: 8px 0;
+    padding: 10px 15px;
+    background-color:white;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: justify;
+}
+
+.download a:hover{
+    background-color: #0056b3;
+    text-decoration: underline;
+}
+
+/*asseessments*/
+.asseessments{
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+}
+/*earing-outcomes*/
+.learing-outcomes{
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #1e3a5f;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #4b79a1;
+  padding-bottom: 5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-column ul li {
+  margin: 5px 0;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #87ceeb;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #4b79a1;
+  padding-top: 15px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.social-icon svg {
+  fill: white;
+  transition: fill 0.3s ease;
+}
+
+.social-icon.facebook {
+  background-color: #3b5998;
+}
+
+.social-icon.twitter {
+  background-color: #1da1f2;
+}
+
+.social-icon.youtube {
+  background-color: #ff0000;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon:hover svg {
+  fill: #ffffff;
+}

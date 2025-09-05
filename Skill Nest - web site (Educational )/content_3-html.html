@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Literacy Guide</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+
+        h2{
+            color: white;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+           
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Go to top button */
+        #top-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3b3bc8;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 14px;
+            z-index: 1000;
+        }
+
+        /* Footer */
+    .site-footer {
+      background-color: #1e3a5f;
+      color: white;
+      padding: 40px 20px 20px;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #4b79a1;
+      padding-bottom: 5px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footer-column ul li {
+      margin: 5px 0;
+    }
+
+    .footer-column ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #87ceeb;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #4b79a1;
+      padding-top: 15px;
+    }
+
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon svg {
+      fill: white;
+      transition: fill 0.3s ease;
+    }
+
+    .social-icon.facebook {
+      background-color: #3b5998;
+    }
+
+    .social-icon.twitter {
+      background-color: #1da1f2;
+    }
+
+    .social-icon.youtube {
+      background-color: #ff0000;
+    }
+
+    .social-icon:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .social-icon:hover svg {
+      fill: #ffffff;
+    }
+
+
+
+ </style>
+</head>
+<body>
+
+<a id="top"></a> <!-- anchor for top -->
+
+<header>
+    <nav>
+            <div class="logo">
+                <img src="Images CW/QualityEducation.jpg" alt="SkillNest Logo">
+                <h1>SKILLNEST</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../homepage.html">Home</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+				<li><a href="./sitemap.html">Sitemap</a></li>
+                <li><a href="../volunteer.html">Volunteer</a></li>
+                <li><a href="./table.html">Table</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="../team.html">Team</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+</header>
+<div style="margin-top: 100px;" class="container"></div>
+
+
+<section id="intro">
+    <h2>Introduction</h2>
+    <p>Digital literacy involves the ability to find, evaluate, use, share, and create content using digital technologies effectively and responsibly.</p>
+    <img src="./Images CW/DigiLit.png" alt="Introduction to Digital Literacy">
+</section>
+
+<section id="benefits">
+    <h2>Benefits of Being Digitally Literate</h2>
+    <p>Digital literacy enhances communication, access to information, job opportunities, and participation in the digital world.</p>
+    <img src="./Images CW/MalP.jpg" alt="Benefits of digital literacy">
+</section>
+
+<section id="skills">
+    <h2>Key Digital Literacy Skills</h2>
+    <ul>
+        <li>Online communication and collaboration.</li>
+        <li>Understanding how to search and validate information.</li>
+        <li>Basic tech troubleshooting.</li>
+        <li>Using productivity software (like Word, Excel).</li>
+    </ul>
+    <img src="./Images CW/DIGIL.jpg" alt="Digital skills set">
+</section>
+
+<section id="tools">
+    <h2>Useful Digital Tools</h2>
+    <p>Examples include Google Workspace, Canva, Zoom, Microsoft Office, and online learning platforms like Coursera or Khan Academy.</p>
+    <img src="./Images CW/parcc.jpg" alt="Tools for digital productivity">
+</section>
+
+<section id="safety">
+    <h2>Practicing Online Safety</h2>
+    <p>Digital literacy also means knowing how to protect your personal information, recognize scams, and use privacy settings effectively.</p>
+    <img src="./Images CW/dlpp.webp" alt="Cybersecurity and online safety">
+</section>
+
+<!-- Go to top button -->
+<a href="#top" id="top-button">Go to Top</a>
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About SkillNest</h4>
+      <p>Empowering learners through accessible education.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon twitter">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon youtube">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+   
+    <div class="footer-column">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+   
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+  <div class="footer-bottom">
+    <p>&copy; 2025 SkillNest. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

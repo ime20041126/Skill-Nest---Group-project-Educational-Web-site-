@@ -1,0 +1,238 @@
+
+        /* Main styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f5f9fc;
+        }
+        
+        /* Header styling matching SkillNest */
+        header#top {
+            background: linear-gradient(135deg, #006994, #003366);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        header#top h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        /* Student info section */
+        .stud {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .stud h2 {
+            color: #006994;
+            margin: 0;
+        }
+        
+        /* Container layout */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 30px;
+        }
+        
+        /* Main content area */
+        main {
+            flex: 3;
+        }
+        
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        section h2 {
+            color: #006994;
+            border-bottom: 2px solid #e1e5ea;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        section h3 {
+            color: #004d7a;
+        }
+        
+        section ul {
+            padding-left: 20px;
+        }
+        
+        section li {
+            margin-bottom: 8px;
+        }
+        
+        /* Sidebar */
+        aside {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            align-self: flex-start;
+            position: sticky;
+            top: 20px;
+        }
+        
+        aside h3 {
+            color: #006994;
+            margin-top: 0;
+            border-bottom: 2px solid #e1e5ea;
+            padding-bottom: 10px;
+        }
+        
+        .top-level-ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .top-level-ul > li {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .top-level-ul ul {
+            list-style: none;
+            padding-left: 15px;
+            margin-top: 5px;
+        }
+        
+        /* Back to top */
+        .top {
+            text-align: right;
+            margin-top: 20px;
+        }
+        
+        /* Team table from landscreen */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #006994;
+            color: white;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        /* Code snippets */
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+        }
+        
+        /* Footer styles */
+        .site-footer {
+            background-color: #003366;
+            color: white;
+            padding: 40px 0 0;
+        }
+        
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            padding: 0 15px 20px;
+        }
+        
+        .footer-column h4 {
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer-column li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-column a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            transition: background-color 0.3s;
+        }
+        
+        .social-icon:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        .social-icon svg {
+            fill: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #002244;
+        }
+        
+        .footer-bottom p {
+            margin: 0;
+        }
+    

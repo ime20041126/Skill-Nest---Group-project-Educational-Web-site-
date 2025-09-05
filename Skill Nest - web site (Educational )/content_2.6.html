@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Final Project - SkillNest</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #87ceeb;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 120px 20px 40px;
+    }
+
+    .page-header {
+      text-align: center;
+      background: linear-gradient(135deg, #1e3a5f, #2d5a87);
+      color: white;
+      padding: 60px 20px;
+      border-radius: 10px;
+    }
+
+    .page-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .page-header p {
+      font-size: 1.2rem;
+    }
+
+    .lesson-section {
+      margin: 40px 0;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .lesson-section h2 {
+      color: #1e3a5f;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .lesson-section h3 {
+      color: #2d5a87;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .lesson-section p, .lesson-section ul {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .submit-box {
+      background: #e8f5e8;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    .submit-box input[type="text"],
+    .submit-box input[type="url"],
+    .submit-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .submit-box button {
+      background-color: #1e3a5f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .submit-box button:hover {
+      background-color: #2d5a87;
+    }
+
+    .site-footer {
+      background-color: #1e3a5f;
+      color: white;
+      padding: 40px 20px 20px;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #4b79a1;
+      padding-bottom: 5px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footer-column ul li {
+      margin: 5px 0;
+    }
+
+    .footer-column ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #87ceeb;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #4b79a1;
+      padding-top: 15px;
+    }
+
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon svg {
+      fill: white;
+      transition: fill 0.3s ease;
+    }
+
+    .social-icon.facebook {
+      background-color: #3b5998;
+    }
+
+    .social-icon.twitter {
+      background-color: #1da1f2;
+    }
+
+    .social-icon.youtube {
+      background-color: #ff0000;
+    }
+
+    .social-icon:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .social-icon:hover svg {
+      fill: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .page-header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+<div class="logo">
+                <img src="QualityEducation.jpg" alt="SkillNest Logo">
+                <h1>SKILLNEST</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../homepage.html">Home</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+				        <li><a href="./sitemap.html">Sitemap</a></li>
+                <li><a href="../volunteer.html">Volunteer</a></li>
+                <li><a href="./table.html">Table</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="../team.html">Team</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                
+            </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Final Web Development Project</h1>
+      <p>Apply what you've learned to build your own personal website</p>
+    </div>
+
+    <div class="lesson-section">
+      <h2>Project Brief</h2>
+      <p>In this final project, you’ll create a personal portfolio website using HTML, CSS, and JavaScript. The goal is to showcase your skills and build a real-world project that you can add to your resume or portfolio.</p>
+
+      <h3>Project Requirements</h3>
+      <ul>
+        <li>Use semantic HTML structure</li>
+        <li>Apply CSS styling and layout techniques</li>
+        <li>Include at least one interactive JavaScript feature (e.g. alert, form validation, animation, etc.)</li>
+        <li>Pages: Home, About Me, Projects, Contact</li>
+        <li>Responsive design (works on mobile and desktop)</li>
+      </ul>
+
+      <h3>Bonus (Optional)</h3>
+      <ul>
+        <li>Add a light/dark theme toggle</li>
+        <li>Include animations or transitions</li>
+        <li>Use a CSS Grid or Flexbox layout</li>
+      </ul>
+
+      <div class="submit-box">
+        <h3>Submit Your Project</h3>
+        <p>Paste the link to your project (GitHub, Netlify, or live site):</p>
+        <form>
+          <input type="text" placeholder="Your Full Name" required />
+          <input type="url" placeholder="Project URL (e.g., https://yourproject.com)" required />
+          <textarea rows="5" placeholder="Any notes or features you'd like to highlight..."></textarea>
+          <button type="submit">Submit Project</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About SkillNest</h4>
+      <p>Empowering learners through accessible education.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon twitter">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon youtube">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="../homepage.html">Home</a></li>
+        <li><a href="../courses.html">Courses</a></li>
+        <li><a href="../SiteMap1.html">Sitemap</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2025 SkillNest. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  
+</body>
+</html>

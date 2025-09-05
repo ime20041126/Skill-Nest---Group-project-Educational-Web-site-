@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor - W.T.Thisara Dhanusekara (Student 1)</title>
+    <link rel="stylesheet" href="css/pageEditor_validator.css">
+    
+</head>
+<body>
+    
+    <!-- Header matching SkillNest -->
+    <header id="top">
+        <div class="logo">
+            <img src="SKILLNEST__3_-removebg-preview.png" alt="SkillNest Logo" style="height: 50px;">
+            <h1>SKILLNEST - Page Editor</h1>
+        </div>
+        
+    </header>
+
+    <section class="stud">
+        <h2> W.T.Thisara Dhanusekara, Student 1</h2>
+        <p>Developer of Volunteer Page, Content Page, and Landing Screen</p>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+            <section>
+                <h2 id="volunteer">Volunteer Page</h2>
+                <h3>Technical Implementation</h3>
+                <p>The Volunteer Page was built with:</p>
+                <ul>
+                    <li><strong>HTML5 Structure:</strong> Semantic elements (<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>) for accessibility</li>
+                    <li><strong>CSS Flexbox:</strong> Responsive card layout for volunteer opportunities</li>
+                    <li><strong>JavaScript:</strong> Form popup functionality with <code>openForm()</code> and <code>closeForm()</code> functions</li>
+                    <li><strong>Form Validation:</strong> HTML5 validation attributes combined with JavaScript</li>
+                    <li><strong>Interactive Elements:</strong> Hover effects on cards using CSS transitions</li>
+                </ul>
+                
+                <h3>Key Code Snippets</h3>
+                <p><strong>Volunteer Card Structure:</strong></p>
+                <pre><code>&lt;div class="card"&gt;
+    &lt;img src="volunteer1.jpg" alt="Tutoring program"&gt;
+    &lt;h3&gt;Online Tutoring&lt;/h3&gt;
+    &lt;button onclick="openForm('Online Tutoring')"&gt;Apply Now&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                
+                <p><strong>Popup Form JavaScript:</strong></p>
+                <pre><code>function openForm(programName) {
+    document.getElementById("program").value = programName;
+    document.getElementById("application-form").style.display = "block";
+}</code></pre>
+                
+                <h3>Accessibility Features</h3>
+                <ul>
+                    <li>Proper form labels with <code>&lt;label&gt;</code> elements</li>
+                    <li>ARIA attributes for screen readers</li>
+                    <li>Color contrast ratio of at least 4.5:1 for text</li>
+                    <li>Keyboard navigable interface</li>
+                    <li>Semantic HTML structure</li>
+                </ul>
+                
+                <h3>Link to Validation Report</h3>
+                <p><a href="sd1validation.html#volunteerVal">View Volunteer Page Validation Report</a></p>
+
+                <h3>Link to Page</h3>
+                <p><a href="voluneeter.html">View Volunteer Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                <h3>Technical Implementation</h3>
+                <p>The Programming Basics content page features:</p>
+                <ul>
+                    <li><strong>Modular Design:</strong> Each topic in separate <code>&lt;div class="module-container"&gt;</code></li>
+                    <li><strong>Code Display:</strong> Styled <code>&lt;code&gt;</code> blocks for examples</li>
+                    <li><strong>Responsive Layout:</strong> Flexbox and media queries for all devices</li>
+                    <li><strong>Navigation:</strong> Consistent header matching site-wide design</li>
+                    <li><strong>Resource Section:</strong> Download links with clear labels</li>
+                </ul>
+                
+                <h3>Key Code Snippets</h3>
+                <p><strong>Module Structure:</strong></p>
+                <pre><code>&lt;div class="module-container"&gt;
+    &lt;h3&gt;Module 1: Introduction&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;What is Programming?&lt;/li&gt;
+        &lt;li&gt;Writing Your First Program&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                
+                <h3>Accessibility Features</h3>
+                <ul>
+                    <li>Proper heading hierarchy (h1-h6)</li>
+                    <li>Alt text for all images</li>
+                    <li>High contrast color scheme</li>
+                    <li>Semantic HTML elements</li>
+                    <li>Responsive design for all screen sizes</li>
+                </ul>
+                
+                <h3>Link to Validation Report</h3>
+                <p><a href="sd1validation.html#contentVal">View Content Page Validation Report</a></p>
+
+                <h3>Link to Page</h3>
+                <p><a href="content.html">View Content Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="landing">Landing Screen</h2>
+                <h3>Technical Implementation</h3>
+                <p>The Landing Screen includes:</p>
+                <ul>
+                    <li><strong>Auto-Redirect:</strong> <code>&lt;meta http-equiv="refresh"&gt;</code> after 4 seconds</li>
+                    <li><strong>Fixed Header:</strong> Logo stays visible with CSS positioning</li>
+                    <li><strong>Background Image:</strong> Full-screen background with <code>background-size: cover</code></li>
+                    <li><strong>Team Table:</strong> Responsive table with hover effects</li>
+                    <li><strong>Responsive Design:</strong> Adapts to mobile and desktop</li>
+                </ul>
+                
+                <h3>Key Code Snippets</h3>
+                <p><strong>Auto-Redirect Meta Tag:</strong></p>
+                <pre><code>&lt;meta http-equiv="refresh" content="4;url=homepage.html"&gt;</code></pre>
+                
+                <p><strong>Background Styling:</strong></p>
+                <pre><code>body {
+    background: url(bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}</code></pre>
+                
+                <h3>Accessibility Features</h3>
+                <ul>
+                    <li>Proper table headers (<code>&lt;th&gt;</code>)</li>
+                    <li>Alt text for logo image</li>
+                    <li>Sufficient color contrast</li>
+                    <li>Clear visual hierarchy</li>
+                    <li>Warning about auto-redirect for screen readers</li>
+                </ul>
+                
+                <h3>Development Team</h3>
+                <table>
+                    <tr>
+                        <th>Member Name</th>
+                        <th>UOW ID</th>
+                        <th>IIT ID</th>
+                        <th>Student Role</th>
+                    </tr>
+                    <tr>
+                        <td>W.T T Dhanusekara</td>
+                        <td>w2149594</td>
+                        <td>20240748</td>
+                        <td>Student1</td>
+                    </tr>
+                    <tr>
+                        <td>T.S.Bandara</td>
+                        <td>w2157987</td>
+                        <td>20240561</td>
+                        <td>Student2</td>
+                    </tr>
+                    <tr>
+                        <td>V.J.Weerakoon</td>
+                        <td>w2149590</td>
+                        <td>20240266</td>
+                        <td>Student3</td>
+                    </tr>
+                    <tr>
+                        <td>Imesha Meegoda</td>
+                        <td>w2149597</td>
+                        <td>20240948</td>
+                        <td>Student4</td>
+                    </tr>
+                </table>
+                
+                <h3>Link to Validation Report</h3>
+                <p><a href="sd1validation.html#landingVal">View Landing Screen Validation Report</a></p>
+
+                <h3>Link to Page</h3>
+                <p><a href="landscreen.html">View Landing Screen</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenges">Challenges and Solutions</h2>
+                <h3>Volunteer Page Challenges</h3>
+                <ul>
+                    <li><strong>Form Validation:</strong> Initially had issues with complex validation rules. Solved by combining HTML5 validation with JavaScript for better user feedback.</li>
+                    <li><strong>Card Layout:</strong> Cards wouldn't align properly on mobile. Fixed with flexbox properties and media queries.</li>
+                </ul>
+                
+                <h3>Content Page Challenges</h3>
+                <ul>
+                    <li><strong>Code Formatting:</strong> Code snippets didn't stand out. Added custom styling to <code>&lt;code&gt;</code> elements for better readability.</li>
+                    <li><strong>Content Overflow:</strong> Long module names caused layout issues. Implemented proper text wrapping and padding.</li>
+                </ul>
+                
+                <h3>Landing Screen Challenges</h3>
+                <ul>
+                    <li><strong>Background Image:</strong> Initially didn't cover the whole screen. Fixed with <code>background-size: cover</code>.</li>
+                    <li><strong>Auto-Redirect:</strong> Needed to make it accessible. Added a visible countdown and ARIA alert.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 id="compliance">Web Standards Compliance</h2>
+                <p>All pages comply with:</p>
+                <ul>
+                    <li><strong>HTML5 Standards:</strong> Validated using W3C validator</li>
+                    <li><strong>CSS3 Standards:</strong> Clean, validated CSS</li>
+                    <li><strong>WCAG 2.1:</strong> AA level accessibility compliance</li>
+                    <li><strong>Responsive Design:</strong> Works on all device sizes</li>
+                    <li><strong>Performance:</strong> Optimized images and assets</li>
+                </ul>
+                
+                <h3>Accessibility Testing</h3>
+                <p>Verified using:</p>
+                <ul>
+                    <li>WAVE Accessibility Tool</li>
+                    <li>Screen reader testing (NVDA)</li>
+                    <li>Keyboard navigation testing</li>
+                    <li>Color contrast checkers</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 id="references">References</h2>
+                <ul>
+                    <li>MDN Web Docs. (2023). <i>HTML elements reference.</i> Mozilla. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a></li>
+                    <li>W3Schools. (2023). <i>CSS Tutorial.</i> <a href="https://www.w3schools.com/css/">https://www.w3schools.com/css/</a></li>
+                    <li>WebAIM. (2023). <i>Web Accessibility in Mind.</i> <a href="https://webaim.org/">https://webaim.org/</a></li>
+                    <li>Duckett, J. (2011). <i>HTML & CSS: Design and Build Websites.</i> John Wiley & Sons.</li>
+                </ul>
+            </section>
+
+            <p class="top"><a href="#top">Back to Top ↑</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Pages Developed</h3>
+            <ul class="top-level-ul">
+                <li>W.T.Thisara Dhanusekara
+                    <ul> 
+                        <li><a href="#volunteer">Volunteer Page</a></li>
+                        <li><a href="#content">Content Page</a></li>
+                        <li><a href="#landing">Landing Screen</a></li>
+                    </ul>
+                </li>
+                <li><a href="#challenges">Challenges</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+            
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>Accessibility</li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>About SkillNest</h4>
+                <p>Empowering learners through accessible education.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon twitter">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon youtube">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+           
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+           
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="sd1validation.html">Validation Page</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+       
+        <div class="footer-bottom">
+            <p>&copy; 2025 SkillNest. All rights reserved. | <a href="pageEditor_ST1.html" style="color: white;">Page Editor</a></p>
+        </div>
+    </footer>
+
+<a href="content.html">link to content</a></br>
+<a href="landscreen.html">link to land page</a><br>
+<a href="voluneeter.html">link to voluneeter page</a><br>
+<a href="sd1validation.html">link to validation page</a>
+
+</body>
+</html>

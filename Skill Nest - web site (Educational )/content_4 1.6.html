@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lesson 3: Understanding Fractions - SkillNest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <style>
+     .page-header {
+      background: linear-gradient(to right, #1e3a5f, #4b79a1);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      margin-bottom: 50px;
+    }
+
+    .page-header h1 {
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 900px;
+      background: white;
+      margin: auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .lesson-section h2 {
+      color: #1e3a5f;
+      margin-bottom: 20px;
+    }
+
+    
+
+    img.lesson-img {
+      margin-top: 25px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .lesson-nav {
+      margin-top: 40px;
+    }
+
+    .lesson-nav a {
+      background: #1e3a5f;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-right: 10px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .lesson-nav a:hover {
+      background: #2d5a87;
+    }
+
+    /* Footer */
+    .site-footer {
+      background-color: #1e3a5f;
+      color: white;
+      padding: 40px 20px 20px;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #4b79a1;
+      padding-bottom: 5px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footer-column ul li {
+      margin: 5px 0;
+    }
+
+    .footer-column ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #87ceeb;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #4b79a1;
+      padding-top: 15px;
+    }
+
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon svg {
+      fill: white;
+      transition: fill 0.3s ease;
+    }
+
+    .social-icon.facebook {
+      background-color: #3b5998;
+    }
+
+    .social-icon.twitter {
+      background-color: #1da1f2;
+    }
+
+    .social-icon.youtube {
+      background-color: #ff0000;
+    }
+
+    .social-icon:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .social-icon:hover svg {
+      fill: #ffffff;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+            <div class="logo">
+                <img src="Images CW/QualityEducation.jpg" alt="SkillNest Logo">
+                <h1>SKILLNEST</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../homepage.html">Home</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+				        <li><a href="./sitemap.html">Sitemap</a></li>
+                <li><a href="../volunteer.html">Volunteer</a></li>
+                <li><a href="./table.html">Table</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="../team.html">Team</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    
+  </header>
+
+
+
+<!--page header-->
+  <div class="page-header">
+  <h1>Lesson 6: Geometry Basics</h1>
+  <p>Understand shapes, their properties, formulas for area and volume, and how geometry is applied in the real world.</p>
+</div>
+
+<!--content-->
+<main class="container">
+  <section class="lesson-section">
+    <h2>Introduction to Geometry</h2>
+    <p>Geometry is the branch of mathematics that studies shapes, sizes, angles, and the properties of space. It is essential in everything from architecture and engineering to art and nature.</p>
+
+    <p>Geometry is generally divided into two major areas:</p>
+    <ul>
+      <li><strong>Plane Geometry:</strong> Deals with flat shapes like lines, circles, and polygons.</li>
+      <li><strong>Solid Geometry:</strong> Deals with 3D shapes like cubes, cylinders, and spheres.</li>
+    </ul>
+
+    <img src="./Images CW/Plane vs Solid Geometry.jpeg " alt="Plane vs Solid Geometry" class="lesson-img" />
+  </section>
+
+  <section class="lesson-section">
+    <h2>Types of Triangles</h2>
+    <ul>
+      <li><strong>Equilateral Triangle:</strong> All sides and angles are equal (each angle = 60°).</li>
+      <li><strong>Isosceles Triangle:</strong> Two sides are equal and two angles are equal.</li>
+      <li><strong>Scalene Triangle:</strong> No sides or angles are equal.</li>
+      <li><strong>Right-Angled Triangle:</strong> One angle is exactly 90°.</li>
+    </ul>
+
+    <img src="./Images CW/types of Triangles.jpeg" alt="Types of Triangles" class="lesson-img" />
+  </section>
+
+  <section class="lesson-section">
+    <h2>Properties of Circles</h2>
+    <ul>
+      <li><strong>Radius:</strong> Distance from the center to any point on the circle.</li>
+      <li><strong>Diameter:</strong> Twice the radius; passes through the center.</li>
+      <li><strong>Circumference:</strong> The total distance around the circle.</li>
+      <li><strong>π (Pi):</strong> A constant approximately equal to 3.14159</li>
+    </ul>
+
+    <p><strong>Formulas:</strong></p>
+    <ul>
+      <li>Circumference = 2πr</li>
+      <li>Area = πr²</li>
+    </ul>
+
+    <img src="./Images CW/Circle Properties.png" alt="Circle Properties" class="lesson-img" />
+  </section>
+
+  <section class="lesson-section">
+    <h2>Perimeter and Area of Basic Shapes</h2>
+    <ul>
+      <li><strong>Square:</strong> Area = side², Perimeter = 4 × side</li>
+      <li><strong>Rectangle:</strong> Area = length × width, Perimeter = 2 × (l + w)</li>
+      <li><strong>Triangle:</strong> Area = ½ × base × height</li>
+      <li><strong>Circle:</strong> Area = πr², Circumference = 2πr</li>
+    </ul>
+
+    <p><strong>Example:</strong> A rectangle with length 10cm and width 5cm:<br>
+      Area = 10 × 5 = 50 cm²<br>
+      Perimeter = 2 × (10 + 5) = 30 cm</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Volume of 3D Shapes</h2>
+    <ul>
+      <li><strong>Cube:</strong> Volume = side³</li>
+      <li><strong>Rectangular Prism:</strong> Volume = length × width × height</li>
+      <li><strong>Cylinder:</strong> Volume = πr²h</li>
+      <li><strong>Sphere:</strong> Volume = 4/3 × πr³</li>
+    </ul>
+
+    <p><strong>Example:</strong> Volume of a cylinder with radius 3 cm and height 10 cm:<br>
+      Volume = π × 3² × 10 = π × 9 × 10 = 90π ≈ <strong>282.74 cm³</strong></p>
+
+    <img src="./Images CW/3D Shapes Volume Formulas.png" alt="3D Shapes Volume Formulas" class="lesson-img" />
+  </section>
+
+  <section class="lesson-section">
+    <h2>Angles and Their Types</h2>
+    <ul>
+      <li><strong>Acute Angle:</strong> Less than 90°</li>
+      <li><strong>Right Angle:</strong> Exactly 90°</li>
+      <li><strong>Obtuse Angle:</strong> Between 90° and 180°</li>
+      <li><strong>Straight Angle:</strong> Exactly 180°</li>
+      <li><strong>Reflex Angle:</strong> More than 180°</li>
+    </ul>
+
+    <p>Angles are used in construction, art, design, and navigation.</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Real-Life Applications of Geometry</h2>
+    <ul>
+      <li><strong>Architecture:</strong> Designing structures and layouts</li>
+      <li><strong>Engineering:</strong> Calculating stress and material usage</li>
+      <li><strong>Graphic Design:</strong> Aligning visual elements with geometry</li>
+      <li><strong>Navigation:</strong> Using angles and distances to find direction</li>
+      <li><strong>Art:</strong> Using shapes and symmetry in compositions</li>
+    </ul>
+
+    <p><em>Example:</em> Architects use geometry to design buildings that are both beautiful and structurally sound, calculating the angles and loads with precision.</p>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Tips to Master Geometry</h2>
+    <ul>
+      <li>Draw figures to visualize problems</li>
+      <li>Memorize key formulas (area, volume, angles)</li>
+      <li>Practice labeling diagrams</li>
+      <li>Use geometry tools (ruler, compass, protractor)</li>
+      <li>Break complex shapes into simpler parts</li>
+    </ul>
+  </section>
+
+  <!-- Lesson Navigation -->
+  <div class="lesson-nav">
+    <a href="./content_4 1.5.html">← Previous Lesson</a>
+    <a href="./content_4 1.html">End ! Back to Intro page   →</a>
+  </div>
+</main>
+
+
+ <!-- Footer -->
+
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About SkillNest</h4>
+      <p>Empowering learners through accessible education.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon twitter">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon youtube">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+   
+    <div class="footer-column">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="./homepage (2).html">Home</a></li>
+        <li><a href="./courses (1).html">Courses</a></li>
+        <li><a href="./sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+   
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+  <div class="footer-bottom">
+    <p>&copy; 2025 SkillNest. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

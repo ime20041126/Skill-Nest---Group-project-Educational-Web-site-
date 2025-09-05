@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathematics - SkillNest</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <style>
+    /* Reset styles */
+    
+    .page-header {
+      background: linear-gradient(to right, #1e3a5f, #4b79a1);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      margin-bottom: 50px;
+    }
+
+    .page-header h1 {
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 900px;
+      background: white;
+      margin: auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .lesson-section h2 {
+      color: #1e3a5f;
+      margin-bottom: 20px;
+    }
+
+    
+
+    img.lesson-img {
+      margin-top: 25px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .lesson-nav {
+      margin-top: 40px;
+    }
+
+    .lesson-nav a {
+      background: #1e3a5f;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-right: 10px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .lesson-nav a:hover {
+      background: #2d5a87;
+    }
+
+     
+        /* Footer */
+.site-footer {
+  background-color: #1e3a5f;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #4b79a1;
+  padding-bottom: 5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #87ceeb;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #4b79a1;
+  padding-top: 15px;
+}
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    .sidebar {
+      position: fixed;
+      top: 120px;
+      right: 0;
+      width: 200px;
+      height: calc(100% - 120px);
+      background-color: #e6f0fa;
+      padding: 20px;
+      border-left: 1px solid #ccc;
+      overflow-y: auto;
+      z-index: 999;
+    }
+
+    .sidebar h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #1e3a5f;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 5px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #1e3a5f;
+      transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+      text-decoration: underline;
+      color: #4b79a1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+            <nav>
+            
+            <div class="logo">
+                <img src="./Images CW/QualityEducation.jpg" alt="SkillNest Logo">
+                <span class="logo-text">SKILLNEST</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../homepage.html">Home</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+				        <li><a href="./sitemap.html">Sitemap</a></li>
+                <li><a href="../volunteer.html">Volunteer</a></li>
+                <li><a href="./table.html">Table</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="../team.html">Team</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <div class="page-header">
+    <h1>Mathematics</h1>
+    <p>Master essential skills in arithmetic, algebra, geometry, and beyond</p>
+  </div>
+
+  <!-- Main Content -->
+  
+  <main class="container">
+  <!-- Lesson 1 -->
+  <section class="lesson-section">
+    <h2>Lesson 1: Numbers & Operations</h2>
+    <ul>
+      <li><strong>Types of Numbers:</strong> Natural, Whole, Integers, Rational, Irrational, Real</li>
+      <li><strong>Even and Odd:</strong> Even = divisible by 2 (e.g., 2, 4, 6). Odd = not divisible by 2 (e.g., 1, 3, 5)</li>
+      <li><strong>Prime Numbers:</strong> Numbers with exactly 2 factors (e.g., 2, 3, 5, 7, 11)</li>
+      <li><strong>Composite Numbers:</strong> More than 2 factors (e.g., 4, 6, 8)</li>
+      <li><strong>Factors & Multiples:</strong> Factors divide exactly. Multiples are repeated additions.</li>
+      <li><strong>LCM & HCF:</strong> Least Common Multiple and Highest Common Factor are used in fraction operations.</li>
+    </ul>
+    <p><em>Real-Life Uses:</em> Dividing items equally, checking for common denominators in fractions.</p>
+  </section>
+
+  <!-- Lesson 2 -->
+  <section class="lesson-section">
+    <h2>Lesson 2: Order of Operations (PEMDAS)</h2>
+    <ul>
+      <li><strong>Remember:</strong> P → E → MD → AS</li>
+      <li><strong>Multiplication and Division:</strong> Left to right</li>
+      <li><strong>Addition and Subtraction:</strong> Left to right</li>
+      <li><strong>Nested Parentheses:</strong> Solve inner brackets first</li>
+    </ul>
+    <p><strong>Example:</strong> 4 + 6 × (2 + 1)² ÷ 3 = <strong>16</strong></p>
+    <p><em>TIP:</em> Always write steps neatly to avoid errors.</p>
+  </section>
+
+  <!-- Lesson 3 -->
+  <section class="lesson-section">
+    <h2>Lesson 3: Understanding Fractions</h2>
+    <ul>
+      <li><strong>Numerator:</strong> Number above the line (how many parts)</li>
+      <li><strong>Denominator:</strong> Number below the line (total parts)</li>
+      <li><strong>Common Denominator:</strong> Needed when adding or subtracting fractions</li>
+      <li><strong>Reciprocals:</strong> Flip numerator and denominator (used in division)</li>
+      <li><strong>Real-World:</strong> Baking, cooking, portioning, medicine dosage</li>
+    </ul>
+    <p><strong>Example:</strong> 3/4 + 1/4 = 4/4 = 1</p>
+  </section>
+
+  <!-- Lesson 4 -->
+  <section class="lesson-section">
+    <h2>Lesson 4: Decimals and Percentages</h2>
+    <ul>
+      <li><strong>Decimal System:</strong> Based on powers of 10</li>
+      <li><strong>Conversion:</strong> 0.5 = 50%, 3/4 = 0.75 = 75%</li>
+      <li><strong>Applications:</strong> Bank interest, taxes, exam scores, discounts</li>
+      <li><strong>Percent Increase/Decrease:</strong> Used in finance & price changes</li>
+    </ul>
+    <p><strong>Example:</strong> A shirt worth $200 with 20% off → Discount = $40, Final Price = $160</p>
+  </section>
+
+  <!-- Lesson 5 -->
+  <section class="lesson-section">
+    <h2>Lesson 5: Introduction to Algebra</h2>
+    <ul>
+      <li><strong>Expression vs Equation:</strong> Expressions don't have "=" sign, equations do</li>
+      <li><strong>Transposition:</strong> Moving terms across the equal sign while changing signs</li>
+      <li><strong>Two-Step Equations:</strong> Solve in reverse order (undo operations)</li>
+      <li><strong>Formulas:</strong> Perimeter = 2(l + w), Area = πr²</li>
+    </ul>
+    <p><strong>Example:</strong> 2x - 4 = 10 → 2x = 14 → x = 7</p>
+  </section>
+
+  <!-- Lesson 6 -->
+  <section class="lesson-section">
+    <h2>Lesson 6: Geometry Basics</h2>
+    <ul>
+      <li><strong>Types of Triangles:</strong> Equilateral, Isosceles, Scalene</li>
+      <li><strong>Circle Properties:</strong> Radius, Diameter, Circumference</li>
+      <li><strong>Area Formulas:</strong> Triangle = ½ × base × height, Circle = πr²</li>
+      <li><strong>Volume:</strong> Cube = s³, Cylinder = πr²h</li>
+      <li><strong>Real-World:</strong> Blueprints, packaging design, architecture</li>
+    </ul>
+  </section>
+
+  
+  <!-- Feedback Form -->
+  <section class="form-section">
+    <h3>Send Us Your Feedback</h3>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+
+
+
+  <!-- Sidebar on Right -->
+  <div class="sidebar">
+    <h3>Lessons</h3>
+    <ul>
+      <li><a href="./content_4 1.1.html">Lesson 1</a></li>
+      <li><a href="./content_4 1.2.html">Lesson 2</a></li>
+      <li><a href="./content_4 1.3.html">Lesson 3</a></li>
+      <li><a href="./content_4 1.4.html">Lesson 4</a></li>
+      <li><a href="./content_4 1.5.html">Lesson 5</a></li>
+      <li><a href="./content_4 1.6.html">Lesson 6</a></li>
+      
+    </ul>
+  </div>
+
+   <!-- Footer -->
+
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About SkillNest</h4>
+      <p>Empowering learners through accessible education.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon twitter">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon youtube">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+   
+    <div class="footer-column">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+   
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+  <div class="footer-bottom">
+    <p>&copy; 2025 SkillNest. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

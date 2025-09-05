@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lesson 3: Understanding Fractions - SkillNest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <style>
+    .page-header {
+      background: linear-gradient(to right, #1e3a5f, #4b79a1);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      margin-bottom: 50px;
+    }
+
+    .page-header h1 {
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 900px;
+      background: white;
+      margin: auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .lesson-section h2 {
+      color: #1e3a5f;
+      margin-bottom: 20px;
+    }
+
+    
+
+    img.lesson-img {
+      margin-top: 25px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .lesson-nav {
+      margin-top: 40px;
+    }
+
+    .lesson-nav a {
+      background: #1e3a5f;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-right: 10px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .lesson-nav a:hover {
+      background: #2d5a87;
+    }
+
+    /* Footer */
+    .site-footer {
+      background-color: #1e3a5f;
+      color: white;
+      padding: 40px 20px 20px;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #4b79a1;
+      padding-bottom: 5px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footer-column ul li {
+      margin: 5px 0;
+    }
+
+    .footer-column ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #87ceeb;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #4b79a1;
+      padding-top: 15px;
+    }
+
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon svg {
+      fill: white;
+      transition: fill 0.3s ease;
+    }
+
+    .social-icon.facebook {
+      background-color: #3b5998;
+    }
+
+    .social-icon.twitter {
+      background-color: #1da1f2;
+    }
+
+    .social-icon.youtube {
+      background-color: #ff0000;
+    }
+
+    .social-icon:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .social-icon:hover svg {
+      fill: #ffffff;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+            <div class="logo">
+                <img src="./Images CW/QualityEducation.jpg" alt="SkillNest Logo">
+                <h1>SKILLNEST</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../homepage.html">Home</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+				        <li><a href="./sitemap.html">Sitemap</a></li>
+                <li><a href="../volunteer.html">Volunteer</a></li>
+                <li><a href="./table.html">Table</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="../team.html">Team</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+  </header>
+
+  <!-- Page Title -->
+  <div class="page-header">
+    <h1>Lesson 4: Decimals and Percentages</h1>
+    <p>Understand how decimals and percentages connect and apply in everyday life</p>
+  </div>
+<!-- Main Lesson Content -->
+  <main class="container">
+    <section class="lesson-section">
+      <h2>Understanding Decimals</h2>
+      <p>Decimals represent parts of a whole using place value after a decimal point. They are a more precise way of expressing numbers, especially when fractions are difficult to interpret or use.</p>
+
+      <ul>
+        <li><strong>Decimal Point:</strong> Separates whole numbers from fractional parts (e.g., 3.75 means 3 whole units and 75 hundredths).</li>
+        <li><strong>Place Values:</strong>
+          <ul>
+            <li>0.5 = 5 tenths</li>
+            <li>0.25 = 2 tenths + 5 hundredths</li>
+            <li>0.007 = 7 thousandths</li>
+          </ul>
+        </li>
+        <li><strong>Terminating vs Recurring Decimals:</strong> 0.5 (terminates), 0.333… (repeats infinitely)</li>
+      </ul>
+
+      <p><strong>Example:</strong> Add 3.5 + 1.25 → Align the decimal points → 3.5 = 3.50 → 3.50 + 1.25 = <strong>4.75</strong></p>
+
+      <img src="./Images CW/Decimal Place Value Chart.jpeg" alt="Decimal Place Value Chart" class="lesson-img">
+    </section>
+
+    <section class="lesson-section">
+      <h2>Understanding Percentages</h2>
+      <p>Percentages are a way to express numbers as parts of 100. It's commonly used in discounts, exam marks, population statistics, and more.</p>
+
+      <ul>
+        <li><strong>Definition:</strong> "Percent" means "per hundred". 75% means 75 out of 100.</li>
+        <li><strong>Conversions:</strong>
+          <ul>
+            <li>Decimal to %: 0.8 = 80%</li>
+            <li>Fraction to %: 3/4 = 0.75 = 75%</li>
+            <li>% to Fraction: 60% = 60/100 = 3/5</li>
+          </ul>
+        </li>
+        <li><strong>Usage:</strong> Discounts, tax, success rates, interest rates.</li>
+      </ul>
+
+      <p><strong>Example:</strong> A jacket costs $120. A 25% discount means:</p>
+      <ul>
+        <li>25% of 120 = (25/100) × 120 = 30</li>
+        <li>Discounted Price = 120 - 30 = <strong>$90</strong></li>
+      </ul>
+
+      <img src="./Images CW/Percentage Discount Graphic.png" alt="Percentage Discount Graphic" class="lesson-img">
+    </section>
+
+    <section class="lesson-section">
+      <h2>Decimal and Percentage Relationship</h2>
+      <p>Decimals and percentages are closely related. Every decimal can be converted into a percentage by multiplying by 100, and vice versa.</p>
+
+      <table style="width:100%; border-collapse: collapse;">
+        <tr style="background:#f0f0f0;">
+          <th style="padding: 8px; border: 1px solid #ccc;">Decimal</th>
+          <th style="padding: 8px; border: 1px solid #ccc;">Percentage</th>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">0.25</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">25%</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">0.50</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">50%</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">0.90</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">90%</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="lesson-section">
+      <h2>Real-Life Applications</h2>
+      <ul>
+        <li><strong>Shopping:</strong> Understanding sale discounts and tax.</li>
+        <li><strong>Banking:</strong> Calculating interest and savings percentages.</li>
+        <li><strong>Health:</strong> Nutritional percentages on food labels.</li>
+        <li><strong>Academics:</strong> Marks and grades are often shown in %.</li>
+      </ul>
+    </section>
+
+    <section class="lesson-section">
+      <h2>Tips to Master Decimals and Percentages</h2>
+      <ul>
+        <li>Always align decimals properly when adding or subtracting.</li>
+        <li>Practice converting between decimals, fractions, and percentages.</li>
+        <li>Use 100 as a common base when comparing percentages.</li>
+        <li>Visualize percentages using pie charts or bar graphs.</li>
+      </ul>
+    </section>
+
+    <!-- Navigation -->
+    <div class="lesson-nav">
+      <a href="./content_4 1.3.html">← Previous Lesson</a>
+      <a href="./content_4 1.5.html">Next Lesson →</a>
+    </div>
+  </main>
+ <!-- Footer -->
+
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About SkillNest</h4>
+      <p>Empowering learners through accessible education.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon twitter">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon youtube">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+   
+    <div class="footer-column">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="./homepage.html">Home</a></li>
+        <li><a href="./Courses.html">Courses</a></li>
+        <li><a href="./sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+   
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+  <div class="footer-bottom">
+    <p>&copy; 2025 SkillNest. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

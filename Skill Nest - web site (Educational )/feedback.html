@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SkillNest - Feedback Form</title>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <style>
+            /* Container spacing */
+        .container {
+            margin-top: 100px;
+        }
+
+        /* Main feedback form styling */
+        .feedback-main {
+            max-width: 800px;
+            margin: 5rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Title styling */
+        .feedback-title {
+            text-align: center;
+            color: #1e3a5f;
+        }
+
+        /* Required field note */
+        .required-note {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Required asterisk */
+        .required-asterisk {
+            color: #e74c3c;
+        }
+
+        /* Form input styling */
+        .form-input {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Textarea styling */
+        .form-textarea {
+            width: 100%;
+            height: 100px;
+        }
+
+        /* Textarea label styling */
+        .textarea-label {
+            margin-top: 1rem;
+        }
+
+        /* Rating title */
+        .rating-title {
+            margin-top: 1.5rem;
+        }
+
+        /* Rating container */
+        .rating-container {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+    
+
+        /* Recommend title */
+        .recommend-title {
+            margin-top: 1rem;
+        }
+
+        /* Select label styling */
+        .select-label {
+            display: block;
+            margin-top: 1rem;
+        }
+
+        /* Form select styling */
+        .form-select {
+            width: 100%;
+            padding: 0.5rem;
+        }
+
+        /* Submit button styling */
+        .submit-button {
+            width: 100%;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Popup overlay */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Popup content */
+        .popup-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 400px;
+        }
+
+        /* Close button */
+        .close-button {
+            margin-top: 1rem;
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+
+        </style>
+        <nav>
+            <div class="logo">
+                <img src="Images CW/QualityEducation.jpg" alt="SkillNest Logo">
+                <h1>SKILLNEST</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../homepage.html">Home</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+				<li><a href="./sitemap.html">Sitemap</a></li>
+                <li><a href="../volunteer.html">Volunteer</a></li>
+                <li><a href="./table.html">Table</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="../team.html">Team</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container"></div>
+
+    <main class="feedback-main">
+        <h2 class="feedback-title">We Value Your Feedback</h2>
+        <p class="required-note">
+            <span class="required-asterisk">*</span> Required fields
+        </p>
+
+        <form id="feedbackForm">
+            <label for="name"><span class="required-asterisk">*</span> Full Name</label>
+            <input type="text" id="name" name="name" required class="form-input"/>
+
+            <label for="email"><span class="required-asterisk">*</span> Email</label>
+            <input type="email" id="email" name="email" required class="form-input"/>
+
+            <p><span class="required-asterisk">*</span> Is this your first time visiting SkillNest?</p>
+            <label class="radio-label"><input type="radio" name="firstTime" value="yes" required /> Yes</label>
+            <label class="radio-label"><input type="radio" name="firstTime" value="no" /> No</label>
+
+            <label for="improvements" class="textarea-label">If returning, what would you improve?</label>
+            <textarea id="improvements" name="improvements" placeholder="Your suggestions..." class="form-textarea"></textarea>
+
+            <p class="rating-title">Rate your satisfaction (1-10):</p>
+            <div class="rating-container">
+                <label class="radio-label"><input type="radio" name="rating" value="1" required /> 1</label>
+                <label class="radio-label"><input type="radio" name="rating" value="2" /> 2</label>
+                <label class="radio-label"><input type="radio" name="rating" value="3" /> 3</label>
+                <label class="radio-label"><input type="radio" name="rating" value="4" /> 4</label>
+                <label class="radio-label"><input type="radio" name="rating" value="5" /> 5</label>
+                <label class="radio-label"><input type="radio" name="rating" value="6" /> 6</label>
+                <label class="radio-label"><input type="radio" name="rating" value="7" /> 7</label>
+                <label class="radio-label"><input type="radio" name="rating" value="8" /> 8</label>
+                <label class="radio-label"><input type="radio" name="rating" value="9" /> 9</label>
+                <label class="radio-label"><input type="radio" name="rating" value="10" /> 10</label>
+            </div>
+
+            <p class="recommend-title"><span class="required-asterisk">*</span> Would you recommend us to others?</p>
+            <label class="radio-label"><input type="radio" name="recommend" value="yes" required /> Yes</label>
+            <label class="radio-label"><input type="radio" name="recommend" value="no" /> No</label>
+
+            <label for="updates" class="select-label">Want to receive updates?</label>
+            <select id="updates" name="updates" class="form-select">
+                <option value="yes-email">Yes - Email</option>
+                <option value="yes-sms">Yes - SMS</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="comments" class="textarea-label">Additional Comments</label>
+            <textarea id="comments" name="comments" class="form-textarea"></textarea>
+
+            <button type="submit" class="submit-button">Submit Feedback</button>
+        </form>
+    </main>
+
+    <!-- Thank You Popup -->
+    <div id="thankyou" class="popup-overlay">
+        <div class="popup-content">
+            <h3>Thank You! 🎉</h3>
+            <p>Your feedback has been submitted.</p>
+            <button onclick="document.getElementById('thankyou').style.display='none';" class="close-button">Close</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            document.getElementById("thankyou").style.display = "flex";
+            this.reset();
+        });
+    </script>
+    <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About SkillNest</h4>
+      <p>Empowering learners through accessible education.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon twitter">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon youtube">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="../homepage.html">Home</a></li>
+        <li><a href="../courses.html">Courses</a></li>
+        <li><a href="./sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2025 SkillNest. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

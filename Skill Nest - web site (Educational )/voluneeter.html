@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillNest volunteering Programs</title>
+    <link href="./CSS/home.css"  rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./CSS/volunteer.css">
+</head>
+<body>
+    <header>
+        <nav>     
+            <div class="logo">
+                <img src="./Images CW/QualityEducation.jpg" alt="SkillNest Logo">
+                <h1>SKILLNEST</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../homepage.html">Home</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+				        <li><a href="./sitemap.html">Sitemap</a></li>
+                <li><a href="./voluneeter.html">Volunteer</a></li>
+                <li><a href="./table.html">Table</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="../team.html">Team</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="./contact .html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+<main>
+
+<!--  Scrollable Information Section -->   
+        <section class="scrollable-section">
+            <h2> Explore Volunteering Opportunities</h2>
+            <div class="filter-bar">
+                <label for="sort">Sort by</label>
+                <select id="sort">
+                    <option> Most Popular</option>
+                    <option>Newest</option>
+                    <option>Alphabetical</option>
+                </select>
+            </div>
+            <div class="volunteer-cards-container">
+                <div class="card">
+                    <img src="./Images CW/volunteer 1.jpg" alt="Program1">
+                    <h3> Online and Physical Tutoring for School Subjects</h3>
+                    <button onclick="openForm('Online  and Physical Tutoring for School Subjects')"> Apply Now</button>
+                </div>
+                <div class="card">
+                    <img src="./Images CW/IT.jpg" alt="Program2">
+                    <h3>ICT and Digital Literacy Training</h3>
+                    <button onclick="openForm('ICT and Digital Literacy Training')"> Apply Now </button>
+                </div>
+                <div class="card">
+                    <img src="./Images CW/skills.webp" alt="Program3">
+                    <h3>Soft Skills & English Training</h3>
+                    <button onclick="openForm('Senior Care Assistance')">Apply Now</button>
+                </div>
+                <div class="card">
+                    <img src="./Images CW/library.jpg" alt="Program4">
+                    <h3> Library Development & Book Drives</h3>
+                    <button onclick="openForm('Library Development & Book Drives')"> Apply Now</button>
+                </div>
+                <div class="card">
+                    <img src="./Images CW/volunteer 5.webp" alt="Program5">
+                    <h3> Mentorship & Career Guidance</h3>
+                    <button onclick="openForm('Mentorship & Career Guidance')"> Apply Now</button>
+                </div>
+
+                
+            </div>
+
+        </section>
+
+
+ <!--Rating and Reviews-->
+        <section class="ratings and reviews">
+            <h2>User Ratings</h2>
+            <div class="ratting-summary">
+                <h3>9.4/10 <span class="highlight">Exceptional</span></h3>
+                <p> Based on<strong>245 verified reviews</strong></p>
+            </div>
+            <div class="review-list">
+            <div class="review-card">
+                <div class="stars">🌟🌟🌟🌟🌟</div>
+                <h4>Wonderful Experience</h4>
+                <p>It was an amazing opportunity to help the environment. <a href="#">See More</a></p>
+                <small>-Ahmed, May 2025</small>
+            </div>
+            <div class="review-card">
+                <div class="stars">🌟🌟🌟🌟</div>
+                <h4>Truly Rewarding</h4>
+                <p>The program helped me give back to society in a meaningful way</p>
+                <small> kavindi,April 2025</small>
+            </div>
+            </div>
+        </section>
+
+
+<!--Feedback Form-->
+<section class="feedback-form">
+    <h2>Share Your Experience with us:</h2>
+    <p>We'd love to hear what you think about our programs!</p>
+    <textarea id="user-review" placeholder="Write your review here....."></textarea>
+
+    
+
+    <div class="form-button">
+        <button class="submit">Submit Feedback</button>
+        <button class="cancel">Cancel</button>
+    </div>
+</section>
+</main>
+
+<!--Application Form Popup-->
+<div id="application-form" class="form-popup">
+    <form id="volunteerForm">
+        <h2> Apply for Volunteering</h2>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <input type="text" id="age" name="age" placeholder="Your age" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <input type="text" id="program" name="program" placeholder="Selected Program" readonly>
+        <input type="text" id="qulifications" name="qulifications" placeholder="Your qulifications(teachers/lectures only)" required>
+        <input type="text" id="question" name="question" placeholder="Are you did Volunteering programs before?" required>
+        <input type="text" id="reson" name="reson" placeholder="Why are you select us ?" readonly>
+        
+        <div class="form-buttons">
+            <button type="submit" class="submit">Submit</button>
+            <button type="button" class="cancel" onclick="closeForm()">Cancel</button>
+        </div>
+
+    </form>
+</div>
+
+<a href="content_ST1 .html">link to content</a><br>
+<a href="landscreen.html">link to land page</a><br>
+<a href="pageEditor _ST1.html">link to editor page</a><br>
+<a href="./validation _ST1.html">link to validation page</a><br>
+
+
+<!-- Footer with Editor Link -->
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About SkillNest</h4>
+      <p>Empowering learners through accessible education.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon twitter">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon youtube">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+   
+    <div class="footer-column">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+   
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+  <div class="footer-bottom">
+    <p>&copy; 2025 SkillNest. All rights reserved.</p>
+  </div>
+    
+    <a href="pageEditor _ST1.html">Visit the 1-page editor</a>
+  </footer>
+
+
+<script src="CSS/landscreen .js"></script> 
+</body>
+</html>

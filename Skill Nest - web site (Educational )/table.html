@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillNest - Quality Education Overview</title>
+    <link href="CSS/style.css"  rel="stylesheet" type="text/css">
+
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            ;
+            
+            min-height: 100vh;
+        }
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            
+        }
+
+
+        /* Header Styles */
+        header {
+            background-color: #1e3a5f;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .logo img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 480;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #87ceeb;
+        }
+        
+
+
+        .table-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+        }
+
+        th {
+            padding: 20px 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            border-bottom: 3px solid rgba(255,255,255,0.2);
+        }
+
+        tbody tr {
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+
+        tbody tr:nth-child(even) {
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.03), rgba(155, 89, 182, 0.03));
+        }
+
+        tbody tr:hover {
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(155, 89, 182, 0.1));
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        td {
+            padding: 18px 15px;
+            vertical-align: top;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .course-name {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .course-icon {
+            font-size: 1.5rem;
+        }
+
+        .description {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: 3px;
+            display: inline-block;
+            box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+        }
+
+        .level {
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .beginner {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+        }
+
+        .intermediate {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+        }
+
+        .advanced {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+        }
+
+        .duration {
+            font-weight: 600;
+            color: #8e44ad;
+            font-size: 1.1rem;
+        }
+
+        .features-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            padding: 30px;
+            margin-top: 30px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .features-section h2 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 2.2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .feature-card p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .contact-item {
+            margin: 8px 0;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            
+            table {
+                font-size: 0.9rem;
+            }
+            
+            th, td {
+                padding: 12px 8px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+        <nav>     
+            <div class="logo">
+                <img src="./Images CW/QualityEducation.jpg" alt="SkillNest Logo">
+                <h1>SKILLNEST</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../homepage.html">Home</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+				<li><a href="./sitemap.html">Sitemap</a></li>
+                <li><a href="./voluneeter.html">Volunteer</a></li>
+                <li><a href="./table.html">Table</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="../team.html">Team</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+<div style="margin-top: 100px;" class="container"></div>
+    <div class="header">
+        <h1>🎓 SKILLNEST</h1>
+        <p class="subtitle">Quality Education for Everyone</p>
+        <p class="mission">Supporting UN Sustainable Development Goal 4: Quality Education</p>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Description & Skills</th>
+                    <th>Level</th>
+                    <th>Duration</th>
+                    <th>Target Audience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="course-name">
+                            <span class="course-icon">💻</span>
+                            Web Development
+                        </div>
+                    </td>
+                    <td>
+                        <div class="description">Learn HTML, CSS, and JavaScript to build modern websites</div>
+                        <div style="margin-top: 10px;">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Responsive Design</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="level beginner">Beginner to Intermediate</div>
+                    </td>
+                    <td class="duration">8-12 weeks</td>
+                    <td>Aspiring web developers, career changers, students</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="course-name">
+                            <span class="course-icon">🖥️</span>
+                            Digital Literacy
+                        </div>
+                    </td>
+                    <td>
+                        <div class="description">Essential computer skills for the modern world</div>
+                        <div style="margin-top: 10px;">
+                            <span class="skill-tag">Computer Basics</span>
+                            <span class="skill-tag">Internet Skills</span>
+                            <span class="skill-tag">Office Software</span>
+                            <span class="skill-tag">Digital Communication</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="level beginner">Beginner</div>
+                    </td>
+                    <td class="duration">4-6 weeks</td>
+                    <td>All ages, beginners, seniors, professionals</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="course-name">
+                            <span class="course-icon">⚡</span>
+                            Programming Basics
+                        </div>
+                    </td>
+                    <td>
+                        <div class="description">Introduction to programming concepts and logic</div>
+                        <div style="margin-top: 10px;">
+                            <span class="skill-tag">Programming Logic</span>
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Algorithms</span>
+                            <span class="skill-tag">Code Structure</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="level beginner">Beginner</div>
+                    </td>
+                    <td class="duration">6-8 weeks</td>
+                    <td>Programming beginners, students, logical thinkers</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="course-name">
+                            <span class="course-icon">📊</span>
+                            Mathematics
+                        </div>
+                    </td>
+                    <td>
+                        <div class="description">From basic arithmetic to advanced mathematics</div>
+                        <div style="margin-top: 10px;">
+                            <span class="skill-tag">Arithmetic</span>
+                            <span class="skill-tag">Algebra</span>
+                            <span class="skill-tag">Geometry</span>
+                            <span class="skill-tag">Statistics</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="level intermediate">Beginner to Advanced</div>
+                    </td>
+                    <td class="duration">10-16 weeks</td>
+                    <td>Students, professionals, exam preparation</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="features-section">
+        <h2>🌟 Why Choose SkillNest?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>🎓 Expert Teachers</h3>
+                <p>Learn from qualified and experienced educators who are passionate about sharing their knowledge and helping you succeed in your learning journey.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📚 Comprehensive Courses</h3>
+                <p>Wide range of subjects and skill levels designed to meet diverse learning needs, from beginners to advanced practitioners.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌍 Global Access</h3>
+                <p>Education accessible from anywhere in the world, breaking down geographical barriers to quality learning opportunities.</p>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h3>📞 Get in Touch</h3>
+            <div class="contact-item">📧 Email: info@skillnest.edu</div>
+            <div class="contact-item">📞 Phone: +1 (555) 123-4567</div>
+            <div class="contact-item">📍 Address: 123 Education Street, Learning City</div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About SkillNest</h4>
+      <p>Empowering learners through accessible education.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon twitter">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon youtube">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="../homepage.html">Home</a></li>
+        <li><a href="../courses.html">Courses</a></li>
+        <li><a href="./sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2025 SkillNest. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

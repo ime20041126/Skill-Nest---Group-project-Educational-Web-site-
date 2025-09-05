@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page Editor | Your Name</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <style>
+    body {
+        
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e3a5f;
+      color: white;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img {
+      height: 40px;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 130px 20px 60px;
+    }
+    section {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #1e3a5f;
+    }
+    h3 {
+      color: #333;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #3b3bc8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .back-to-top {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>     
+            <div class="logo">
+                <img src="./Images CW/QualityEducation.jpg" alt="SkillNest Logo">
+                <h1>SKILLNEST</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../homepage.html">Home</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+				        <li><a href="./sitemap.html">Sitemap</a></li>
+                <li><a href="./voluneeter.html">Volunteer</a></li>
+                <li><a href="./table.html">Table</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="../team.html">Team</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="./contact .html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+   <div style="margin-top: 100px;" class="container"></div>
+  <main class="container">
+    <section>
+      <h1>Page Editor</h1>
+      <p><strong>Name:</strong> Vinuka Weerakoon</p>
+      <p><strong>Role:</strong> Web Developer & Designer</p>
+      <p><strong>Pages Developed:</strong></p>
+      <ul>
+        <li><a href="volunteer.html" target="_blank">Volunteer Page</a></li>
+        <li><a href="feedback1.html" target="_blank">Feedback Page</a></li>
+        <li><a href="DigiLc.html" target="_blank">Digital Literacy Page</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Volunteer Page</h2>
+      <h3>Technical Description</h3>
+      <ul>
+        <li>Responsive layout using CSS grid for program cards</li>
+        <li>Hero section with prominent CTA button</li>
+        <li>Custom feedback form and review cards</li>
+        <li>Color scheme: #667eea, #ff6b6b, and white background for clarity</li>
+      </ul>
+      <h3>Accessibility</h3>
+      <ul>
+        <li>Readable font size and contrast</li>
+        <li>Semantic tags for structure</li>
+        <li>Accessible button labels and alt attributes</li>
+      </ul>
+      <p><a href="validation_STx.html#volunteer" target="_blank">View Volunteer Page Validation</a></p>
+    </section>
+
+    <section>
+      <h2>Feedback Page</h2>
+      <h3>Technical Description</h3>
+      <ul>
+        <li>Form includes required fields, radio buttons, dropdown, and textarea</li>
+        <li>Custom popup confirmation on submission using JavaScript</li>
+        <li>Styled using CSS shadows, padding, and rounded corners</li>
+      </ul>
+      <h3>Accessibility</h3>
+      <ul>
+        <li>Labels linked to input fields</li>
+        <li>Keyboard-friendly form design</li>
+        <li>Clear indicators for required fields</li>
+      </ul>
+      <p><a href="validation_STx.html#feedback" target="_blank">View Feedback Page Validation</a></p>
+    </section>
+
+    <section>
+      <h2>Digital Literacy Page</h2>
+      <h3>Technical Description</h3>
+      <ul>
+        <li>Five section layout using semantic HTML5 tags</li>
+        <li>Visuals with alt tags and consistent styling</li>
+        <li>Sticky “Go to Top” button using fixed positioning</li>
+      </ul>
+      <h3>Accessibility</h3>
+      <ul>
+        <li>Alt text for all images</li>
+        <li>Readable text and responsive layout</li>
+        <li>Accessible navigation with clear anchor links</li>
+      </ul>
+      <p><a href="validation_STx.html#digi" target="_blank">View Digital Literacy Page Validation</a></p>
+    </section>
+
+    <section>
+      <h2>Challenges and Lessons Learned</h2>
+      <ul>
+        <li>Challenge: Making the layout responsive across devices → Solved using media queries and grid/flex</li>
+        <li>Challenge: JavaScript-based popup confirmation → Solved by testing with different events and reset logic</li>
+        <li>Lesson: Design consistency and accessibility should be planned from the start</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Compliance</h2>
+      <ul>
+        <li>Pages comply with W3C HTML5 and CSS3 standards</li>
+        <li>Accessibility implemented using WCAG 2.1 guidelines</li>
+        <li>Navigation and layout structure follow Janet web publication requirements</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>References</h2>
+      <ul>
+        <li>Duckett, J. (2011). *HTML and CSS: Design and Build Websites*. Wiley.</li>
+        <li>W3C (2023). *Web Content Accessibility Guidelines (WCAG) 2.1*. Retrieved from https://www.w3.org/TR/WCAG21/</li>
+        <li>SkillNest Project Files (2025). Volunteer, Feedback, and Digital Literacy Pages</li>
+      </ul>
+    </section>
+
+    <p class="back-to-top"><a href="#">Back to Top</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SkillNest. All Rights Reserved.</p>
+    <p>Created by Group 9 – G8</p>
+  </footer>
+</body>
+</html>
+
+
+   
